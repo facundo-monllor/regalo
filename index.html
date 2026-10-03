@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#160828">
+  <title>Para Lucía</title>
+  <link rel="preload" href="fonts/bungee.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rubik.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="cabinet" id="cabinet">
+    <header class="marquee">
+      <div class="marquee__sign">
+        <h1 class="marquee__name">Lucía</h1>
+        <p class="marquee__date">08·08·24</p>
+      </div>
+    </header>
+
+    <section class="glass" id="glass" aria-label="Vidriera con los cuatro premios">
+      <div class="glass__rail" aria-hidden="true"></div>
+      <div class="claw" id="claw" aria-hidden="true">
+        <div class="claw__cable" id="clawCable"></div>
+        <div class="claw__head" id="clawHead">
+          <svg class="claw__svg" viewBox="0 0 80 72" width="80" height="72">
+            <rect x="26" y="0" width="28" height="16" rx="4" class="claw__body"/>
+            <rect x="30" y="4" width="20" height="4" rx="2" class="claw__shine"/>
+            <circle cx="40" cy="22" r="8" class="claw__hub"/>
+            <g class="claw__prong claw__prong--l">
+              <path d="M36 24 L18 40 Q12 48 20 62 L24 60 Q20 50 24 44 L40 30 Z"/>
+            </g>
+            <g class="claw__prong claw__prong--r">
+              <path d="M44 24 L62 40 Q68 48 60 62 L56 60 Q60 50 56 44 L40 30 Z"/>
+            </g>
+          </svg>
+          <div class="claw__grip" id="clawGrip"></div>
+        </div>
+      </div>
+
+      <div class="chute" id="chute" aria-hidden="true">
+        <span>Premios</span>
+      </div>
+
+      <ul class="pile" id="pile">
+        <li class="capsule capsule--1" data-i="0"><span class="capsule__tag">1</span></li>
+        <li class="capsule capsule--2" data-i="1"><span class="capsule__tag">2</span></li>
+        <li class="capsule capsule--3" data-i="2"><span class="capsule__tag">3</span></li>
+        <li class="capsule capsule--4" data-i="3"><span class="capsule__tag">4</span></li>
+      </ul>
+      <div class="glass__glare" aria-hidden="true"></div>
+    </section>
+
+    <div class="belly">
+      <div class="door" id="door" aria-hidden="true">
+        <div class="door__flap"></div>
+        <div class="door__prize" id="doorPrize"></div>
+      </div>
+      <div class="belly__col">
+        <div class="led" role="status" aria-live="polite">
+          <p class="led__text" id="led">Hola, Lucía</p>
+        </div>
+        <ol class="coins" id="coins" aria-label="Fichas">
+          <li></li><li></li><li></li><li></li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="deck" aria-label="Panel de juego">
+      <div class="screen" id="screen"></div>
+      <div class="controls">
+        <div class="stick" aria-hidden="true"><span class="stick__ball"></span></div>
+        <div class="button-well">
+          <button class="big-button" id="bigButton" type="button">
+            <span class="big-button__cap"></span>
+            <span class="visually-hidden" id="bigButtonSr">Empezar</span>
+          </button>
+          <span class="big-button__label" id="bigButtonLabel" aria-hidden="true">Start</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="final" id="final" hidden aria-label="Premio final">
+    <figure class="final__hero">
+      <img src="pag10-2.jpg" alt="Facundo le da un beso en la mejilla a Lucía, de noche, con luz azul" width="512" height="911">
+      <figcaption class="final__message">
+        <p class="final__line">Ganaste los cuatro. Pero el mejor premio de esta máquina me lo gané yo: vos.</p>
+        <p class="final__love">Te amo.</p>
+      </figcaption>
+    </figure>
+
+    <div class="strip" aria-label="Tira de fotos">
+      <div class="strip__head">
+        <span>Foto premio</span>
+        <span>Lucía + Facundo</span>
+      </div>
+      <figure class="strip__frame">
+        <img src="pag19-2.jpg" alt="Selfie de Lucía y Facundo con buzos, a contraluz" width="683" height="911" loading="lazy">
+      </figure>
+      <figure class="strip__frame strip__frame--wide">
+        <img src="pag20-2.jpg" alt="Lucía y Facundo en el pasto al atardecer, con el cielo celeste" width="1215" height="911" loading="lazy">
+      </figure>
+      <figure class="strip__frame strip__frame--wide">
+        <img src="pag18-1.jpg" alt="Lucía y Facundo abrazados junto a una fuente, de día" width="1215" height="911" loading="lazy">
+      </figure>
+      <div class="strip__foot">
+        <p class="strip__date">08·08·2024</p>
+        <p class="strip__sign">Facundo</p>
+      </div>
+    </div>
+
+    <button class="replay" id="replay" type="button">Jugar otra vez</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
